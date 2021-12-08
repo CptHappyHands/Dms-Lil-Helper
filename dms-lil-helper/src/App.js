@@ -1,10 +1,15 @@
-import logo from "./logo.svg";
+import React from "react";
 import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
+import BattleOrder from "./components/BattleOrder";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+      </Routes>
     </div>
   );
 }
