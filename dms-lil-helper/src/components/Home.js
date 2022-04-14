@@ -1,6 +1,4 @@
 import React from "react";
-
-import { Routes, Route } from "react-router-dom";
 import BattleOrder from "./BattleOrder";
 
 const Home = () => {
@@ -32,9 +30,7 @@ const Home = () => {
           <button>Submit</button>
         </div>
       </header>
-      <Routes>
-        <Route exact path="/" element={<BattleOrder />} />
-      </Routes>
+      <BattleOrder />
     </div>
   );
 };
